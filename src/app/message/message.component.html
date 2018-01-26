@@ -1,0 +1,17 @@
+<article class="panel panel-default">
+    <!-- <input type="text" [(ngModel)] = "message.content"> -->
+    <div class="panel-body">
+      {{ messageChild.content }}
+    </div>
+    <footer class="panel-footer">
+      <div class="author">
+        {{ messageChild.username }}
+      </div>
+
+      <div class="config" *ngIf="belongsToUser()">
+        <a (click)="OnEdit()">Edit</a>
+        <a (click)="OnDelete()">Delete</a>
+      </div>
+
+    </footer>
+  </article>

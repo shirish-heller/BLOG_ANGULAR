@@ -1,0 +1,16 @@
+<div class="col-md-8 col-md-offset-2">
+  <form [formGroup]="myform" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="idemail">E-Mail</label>
+      <input type="text" formControlName="email" class="form-control" id="idemail">
+    </div>
+
+    <div class="form-group">
+      <label for="idPsswd">Password</label>
+      <input type="password" formControlName="password" class="form-control" id="idPsswd">
+    </div>
+
+    <button class="btn btn-primary" [disabled]="!myform.valid" type="submit">Submit</button>
+  </form>
+  <hr>
+</div>

@@ -1,0 +1,11 @@
+.config {
+    display: inline-block;
+    text-align: right;
+    width: 19%;
+}
+
+.author {
+    display:inline-block;
+    width: 80%;
+    font-style: italic;
+}
